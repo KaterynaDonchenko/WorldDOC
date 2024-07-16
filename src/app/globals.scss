@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @apply mx-auto;
+}
+
+.main {
+	.main-wrapper {
+		@apply bg-gray rounded-t-[99px] pt-12 px-[4.275rem] pb-8;
+	}
+  .main-content {
+    @apply flex relative mb-10;
+  }
+  .promo {
+    @apply w-[48.4375rem] h-[31.625rem] bg-white rounded-[100px] pt-[5.9375rem] px-[4.1875rem] pb-[8.5625rem] z-20;
+    &__img {
+      @apply absolute z-10 right-0 w-[48.4375rem] h-[31.625rem];
+    }
+    &__lable {
+      @apply font-extrabold text-5xl text-center relative mb-1.5;
+      &:after {
+        content: url('/cerly-line.svg');
+        position: absolute;
+        right: 28%;
+        bottom: -36%;
+        z-index: -1;
+      }
+    }
+    &__title {
+      @apply text-center text-[42px] mb-10;
+      span {
+        @apply font-extrabold;
+      }
+    }
+    &__subtitle {
+      @apply text-[20px] text-[#495057] mb-[4.375rem];
+    }
+  }
+  .pop-special {
+	@apply px-12 pb-20;
+	&__title {
+		@apply text-2xl pb-3;
+	}
+	&__content {
+		@apply flex gap-[3.25rem] justify-center;
+	}
+	&__circle {
+		@apply w-20 h-20 rounded-full bg-gray-gradient flex flex-wrap justify-center content-center;
+	}
+	&__img {
+		@apply w-14 h-14 ml-[0.4375rem] mt-[0.4375rem];
+	}
+  }
+  .appointment {
+	@apply pt-[5.125rem] h-[53.8125rem];
+	background: url('/bg-second.jpeg') center center/cover no-repeat;
+	.container {
+		position: relative;
+	}
+	&__title {
+		@apply relative z-10 w-[45.1875rem] h-[6.0625rem] py-[0.875rem] px-[1.6875rem] rounded-[50px] bg-white/[.4] font-extrabold text-[1.875rem] leading-9 m-auto;
+		span {
+			@apply text-dark-blue;
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 45.1875rem;
+			height: 6.0625rem;
+			border-radius: 50px;
+			backdrop-filter: blur(35px);
+			z-index: -1;
+		}
+	}
+	&__title-circle {
+		position: absolute;
+		top: 0;
+		left: -97px;
+		width: 6.0625rem;
+		height: 6.0625rem;
+		border-radius: 100%;
+		background-color: rgba(255, 255, 255, .4);
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 6.0625rem;
+			height: 6.0625rem;
+			border-radius: 100%;
+			backdrop-filter: blur(35px);
+			z-index: -1;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 2.375rem;
+			height: 2.375rem;
+			border-radius: 100%;
+			background-color: #fff;
+		}
+	}
+	&__text {
+		@apply text-[1.25rem] py-5 pl-20 pr-10 w-[21.0625rem] h-[3.9375rem] rounded-[50px] bg-white/[.4] leading-5 relative z-10;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 21.0625rem;
+			height: 3.9375rem;
+			border-radius: 50px;
+			backdrop-filter: blur(35px);
+			z-index: -1;
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 3.9375rem;
+			height: 3.9375rem;
+			background-image: linear-gradient(to bottom, #FDFDFD 0%, #F5F5F5 59%, #D8D8D8 100%);
+			border-radius: 100%;
+			z-index: 50;
+		}
+	}
+	&__live {
+		@apply absolute top-[16.25rem] left-[12.625rem];
+		&:after {
+			content: url('/icons/brain.png');
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 30;
+			margin-top: 0.25rem;
+		}
+		
+	}
+	&__online {
+		@apply absolute top-[21.875rem] right-[20.0625rem];
+		&:after {
+			content: url('/icons/dna.png');
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 16px;
+			z-index: 30;
+			margin-top: 0.25rem;
+		}
+	}
+  }
+  .doctors {
+	@apply pt-20 pb-28 bg-[#EBEBEB];
+	.container {
+		@apply flex justify-end;
+	}
+	&__img {
+		@apply absolute left-[-80px] z-10;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			right: 25%;
+			top: 5%;
+			width: 31.0625rem;
+			height: 29.4375rem;
+			background-color: #F7F7F7;
+			border-radius: 100%;
+			border: 3px solid #fff;
+			z-index: -1;
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			right: 19%;
+			top: -6%;
+			width: 38.625rem;
+			height: 36.5625rem;
+			background-color: #F7F7F7;
+			border-radius: 100%;
+			border: 3px solid #fff;
+			z-index: -2;
+		} 
+	}
+	&__right-wrapper {
+		@apply w-[55.4375rem] h-[31.125rem] bg-[rgba(228,227,227,.36)] rounded-[30px] border-[3px] border-solid border-white z-20 mr-[4.625rem]
+		pt-[2.6875rem] pl-[8.375rem] pr-[2.875rem] pb-[1.5625rem];
+	}
+	&__title {
+		@apply font-extrabold text-[1.875rem] leading-8 mb-[3.125rem] ml-[3.0625rem];
+	}
+	&__subtitle {
+		@apply text-[#495057] text-[1.4375rem] ml-[3.0625rem] mb-[3.75rem]
+	}
+  }
+
+}
+ 
+swiper-container::part(pagination) {
+	bottom: -2rem;	
+}
+
+swiper-container::part(container) {
+	overflow: visible;
+}
+
+
+
+
+
+
+
+

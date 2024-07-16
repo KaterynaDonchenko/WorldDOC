@@ -1,0 +1,36 @@
+.footer {
+    @apply bg-[#EBEBEB];
+}
+
+.wrapper {
+    @apply rounded-t-[99px] bg-dark-blue pt-[4.125rem] px-[4.625rem] pb-[1.625rem];
+}
+
+.top-footer {
+    @apply flex gap-[3.375rem]
+}
+
+.menu {
+    @apply text-white text-[1.375rem] font-medium flex gap-[5.375rem] mb-[4.1875rem];
+
+    ul > li:first-child {
+    	@apply mb-[1.375rem];
+    }
+
+	ul > li:not(:first-child) {
+		@apply font-light mb-[0.625rem];
+	}
+
+	ul > li:last-child {
+		@apply mb-0;
+	}
+	  		
+}
+
+.line {
+	@apply h-[2px] bg-[#DFDFE3] mb-[1.75rem];
+}
+
+.botom-footer {
+	@apply flex gap-[1.375rem] text-white text-[1.1875rem];
+}

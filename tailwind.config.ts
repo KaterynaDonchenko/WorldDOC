@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import colors, {black, transparent, white} from 'tailwindcss/colors';
+
 
 const config: Config = {
   content: [
@@ -8,10 +10,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        black,
+        transparent,
+        white,
+        'primary': '#C5E5FF',
+        'dark-blue': '#131D64',
+        'light-blue': '#0067FF',
+        'gray': '#EBEBEB'
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'red': 'linear-gradient(to bottom, #EE1D32, #FE455E)',
+		    'gray-gradient': 'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 34%, #F2F2F2 68%, #D6D6D6 100%)'
       },
     },
   },

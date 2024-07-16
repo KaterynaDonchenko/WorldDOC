@@ -1,0 +1,36 @@
+.header {
+    @apply flex justify-between font-normal text-xl pt-[1.333rem] px-[3.75rem] pb-[1.375rem];
+}
+
+
+.menu {
+    @apply flex items-center;
+}
+
+.list {
+    @apply flex space-x-11 items-center;
+}
+
+.link, .language {
+   &::after {
+    content: url('/icons/arrow.svg');
+    display: inline-block;
+    margin-left: 8px;
+   }
+}
+
+.active {
+    @apply font-medium rounded-full px-3.5 bg-primary py-[0.3125rem];
+}
+
+.language {
+    @apply border rounded-full border-black border-solid py-2.5 mr-8 cursor-pointer w-[6.625rem] h-[3.125rem] px-[1.125rem];
+}
+
+.right-block {
+    @apply flex mr-8 items-center;
+}
+
+.button {
+    @apply rounded-full text-white py-3 font-semibold bg-dark-blue text-[1.375rem] px-[1.8125rem];
+}
