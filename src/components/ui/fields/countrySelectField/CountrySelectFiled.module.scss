@@ -1,0 +1,48 @@
+.label {
+    @apply block font-light text-[1.25rem] text-[#080808] mb-[0.5625rem]
+}
+
+.select {
+    @apply relative w-full h-[3.4375rem] p-3 outline-none border border-[#080808] border-solid 
+    rounded-[4px] cursor-pointer
+}
+ 
+.country-select {
+     @apply absolute top-0 w-full left-0
+}
+ 
+.country-select-list {
+     @apply relative z-10 w-[354px] h-[225px] mt-[2px] overflow-y-auto border rounded-[8px] p-2 bg-white;
+}
+ 
+.show {
+     display: block
+}
+ 
+.hide {
+     display: none
+}
+ 
+.country-select-item {
+     @apply flex items-center gap-2 text-[16px] font-normal p-1 cursor-pointer
+}
+ 
+.country-select-item-flag {
+     @apply text-[36px] leading-[34px]
+}
+ 
+.country-select-item-code {
+     @apply text-[18px]
+}
+ 
+.country-select-value {
+    @apply h-[3.4375rem] w-full flex justify-between items-center cursor-pointer p-3;
+    &::after {
+         content: url('/icons/arrow.svg');
+         display: inline-block;
+    }
+}
+
+.error {
+     @apply mt-1 font-[14px] text-[#ff0000]
+}

@@ -1,4 +1,3 @@
-'use client'
 
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -29,7 +28,7 @@ export function Header () {
             </nav>
             <div className={styles['right-block']}>
                 <div className={styles.language}>Eng</div>
-                <Link href="/account" className={styles.button}>Personal account</Link>
+                <Link href="/login" className={styles.button}>Personal account</Link>
             </div>
         </header>
     )

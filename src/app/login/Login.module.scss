@@ -1,0 +1,24 @@
+.login {
+    @apply py-[3.3125rem]
+}
+
+.window {
+    @apply w-[31.25rem] mt-[2.875rem] m-auto px-[1.5625rem] py-[2.1875rem] border border-[#D6D6D6] rounded-[8px]
+}
+
+.fieldWrapper {
+    @apply mb-[1.875rem];
+}
+
+.link, .register-link {
+    @apply block mx-auto mt-[1.3125rem] mx-auto text-[#0057B8] underline text-center
+}
+
+.register-link {
+    @apply text-start mt-0 inline ml-2
+}
+
+.register {
+    @apply text-center mt-2
+}
+
