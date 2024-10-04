@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
+    "@gsap/react": "^2.1.1",
     "@mui/material": "^5.16.7",
     "@tanstack/react-query": "^5.54.1",
     "@tanstack/react-query-devtools": "^5.54.1",
@@ -21,6 +22,7 @@
     "country-list-with-dial-code-and-flag": "^5.0.5",
     "dotenv": "^16.4.5",
     "formik": "^2.4.6",
+    "gsap": "^3.12.5",
     "js-cookie": "^3.0.5",
     "lodash.debounce": "^4.0.8",
     "next": "^14.2.9",

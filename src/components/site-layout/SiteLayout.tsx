@@ -10,7 +10,7 @@ export default function SiteLayout ({children} : PropsWithChildren) {
         <QueryProvider>
             <Header/>
             {children}
-            <Footer/>
+            {/* <Footer/> */}
         </QueryProvider>
     )
 }

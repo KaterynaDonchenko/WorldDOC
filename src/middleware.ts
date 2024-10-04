@@ -8,11 +8,8 @@ export async function middleware(
 ) {
     const {url, cookies} = request
 
-    console.log(url, cookies)
-
     const refreshToken = cookies.get(EnumTokens.REFRESH_TOKEN)?.value
 
-    const isAccountPage = url.includes('/account')
     const isLoginPage = url.includes('/login')
 
     if(isLoginPage && refreshToken) {
@@ -21,10 +18,6 @@ export async function middleware(
 
     if(isLoginPage) {
         return NextResponse.next()
-    }
-
-    if (isAccountPage) {
-        return NextResponse.redirect(new URL('/page404', request.url))
     }
 
     if(!refreshToken) {

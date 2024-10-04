@@ -1,4 +1,4 @@
 export enum EnumAuth {
     'LOGIN' = 'login',
-    'REGISTER' = 'Register'
+    'REGISTER' = 'register'
 }

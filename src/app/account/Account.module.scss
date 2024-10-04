@@ -1,0 +1,33 @@
+.window {
+    @apply grid absolute right-0 top-[109px] w-[370px] bg-white rounded-[50px];
+    height: calc(100vh - 109px);
+    grid-template-rows: 90px 1fr;
+}
+
+.header {
+    @apply flex bg-dark-blue py-[10px] px-[20px] gap-[20px] items-center rounded-t-[50px] 
+}
+
+.thumbnail {
+    @apply relative w-[70px] h-[70px] bg-white rounded-full
+}
+
+.letter {
+    @apply block font-bold text-[30px] top-[50%] absolute right-[50%] translate-x-[50%] translate-y-[-50%]
+}
+
+.name {
+    @apply text-[24px] text-white 
+}
+
+.menu {
+    @apply px-[30px] py-[15px]
+}
+
+.list {
+    @apply py-[30px] flex flex-col gap-[15px] border-b border-[#D9D9D9]
+}
+
+.link {
+    @apply flex gap-[15px] items-center
+}
